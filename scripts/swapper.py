@@ -106,8 +106,8 @@ def swap_face(
     upscale_options: Union[UpscaleOptions, None] = None,
 ) -> ImageResult:
     result_image = target_img
-    converted = convert_to_sd(target_img)
-    scale, fn = converted[0], converted[1]
+    #converted = convert_to_sd(target_img)
+    #scale, fn = converted[0], converted[1]
     if model is not None:
         if isinstance(source_img, str):  # source_img is a base64 string
             import base64, io

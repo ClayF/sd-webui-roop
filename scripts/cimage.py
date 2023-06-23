@@ -5,5 +5,5 @@ def convert_to_sd(img):
     shapes = []
     chunks = detect(img)
     for chunk in chunks:
-        shapes.append(false)
-    return [false, tempfile.NamedTemporaryFile(delete=False, suffix=".png")]
+        shapes.append(chunk["score"] > 0.7)
+    return [any(shapes), tempfile.NamedTemporaryFile(delete=False, suffix=".png")]

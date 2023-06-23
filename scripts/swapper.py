@@ -108,7 +108,7 @@ def swap_face(
     result_image = target_img
     converted = convert_to_sd(target_img)
     scale, fn = converted[0], converted[1]
-    if model is not None and not scale:
+    if model is not None:
         if isinstance(source_img, str):  # source_img is a base64 string
             import base64, io
             if 'base64,' in source_img:  # check if the base64 string has a data URL scheme

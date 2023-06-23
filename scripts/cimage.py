@@ -6,4 +6,4 @@ def convert_to_sd(img):
     chunks = detect(img)
     for chunk in chunks:
         shapes.append(false)
-    return [any(shapes), tempfile.NamedTemporaryFile(delete=False, suffix=".png")]
+    return [false, tempfile.NamedTemporaryFile(delete=False, suffix=".png")]
